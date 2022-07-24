@@ -58,32 +58,46 @@
       </button>
 
 
-<form class="modal-form">
+<form class="modal-form" autocomplete="on">
 <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
 
 <div class="form-field">
   <label for="modal-name">Имя</label>
-  <input class="input-field name" type="text" name="modal-name" id="modal-name">
+  <input class="input-field name" type="text" name="modal-name" id="modal-name">  
+  <svg class="modal-form-icon">
+  <use href="./images/icons/symbol-defs.svg#icon-person">
+  </use>
+  </svg>
 </div>
 
 <div class="form-field">
   <label for="modal-tel">Телефон</label>
+      
   <input class="input-field tel"  type="tel" name="modal-tel" id="modal-tel">
+  <svg class="modal-form-icon">
+  <use href="./images/icons/symbol-defs.svg#icon-tel">
+  </use>
+  </svg>
 </div>
 
 <div class="form-field">
   <label for="modal-mail">Почта</label>
   <input class="input-field mail"  type="mail" name="modal-mail" id="modal-mail">
+  <svg class="modal-form-icon">
+  <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+  </svg>
 </div>
 
 <div class="form-field">
   <label for="modal-comment">Комментарий</label>
-<textarea class="input-field comment"  name="modal-comment" id="modal-comment" cols="" rows="">Введите текст</textarea>
+<textarea class="input-field comment"  name="modal-comment" id="modal-comment" placeholder="Введите текст..."></textarea>
 </div>
 
 <div class="form-checkbox">
-  <input class="checkbox-field" type="checkbox" name="modal-checkbox" value="" id="modal-checkbox">
-  <label for="modal-checkbox">Соглашаюсь с рассылкой и принимаю <a class="link-contract" href="">Условия Договора</a> </label>
+  <label class="checkbox-label">
+  <input class="checkbox-input" type="checkbox" name="modal-checkbox">
+  <span class="check-box"></span>  
+  Соглашаюсь с рассылкой и принимаю <a class="link-contract" href="">Условия Договора</a></label>
 </div>
 
 <div class="btn-form-send">
@@ -428,15 +442,16 @@
         </ul>
       </div>
       <!-- ФОРМА ФУТЕР -->
-        <div class="form-sumbit">
-          <form>
-            <label for="user-email-footer">Подпишитесь на рассылку</label>
+        
+          <form class="form-sumbit">
+            <div class="sumbit-label-input"><label for="user-email-footer">Подпишитесь на рассылку</label>
             <input type="email" name="user-email-footer" id="user-email-footer" placeholder="E-mail">
+            </div>
+            <div class="footer-btn">
             <button type="submit" class="footer-form-btn">Подписаться<svg class="form-icon-send">
               <use href="./images/icons/symbol-defs.svg#icon-send"></use>
-            </svg></button>
+            </svg></button></div>
           </form>
-        </div>
     </div>
   </footer>
 
