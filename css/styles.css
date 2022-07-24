@@ -723,9 +723,13 @@ s.ection-title.clients {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
-   transition-property: outline-color;
+  transition-property: outline-color;
   transition-duration: var(--time-hover);
   transition-timing-function: var(--time-function);
+}
+
+.sumbit-input:focus {
+  outline: 1px solid var(--accent-color);
 }
 
 .sumbit-label-input input::placeholder {
@@ -735,13 +739,8 @@ s.ection-title.clients {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sumbit-input:focus {
-  outline: 1px solid var(--accent-color);
-}
-
 .sumbit-label-input label {
   margin-bottom: 20px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
