@@ -993,6 +993,8 @@ s.ection-title.clients {
   height: 15px;
   margin-left: -24px;
   background-image: url(../images/icons/square.svg);
+
+  transition: background-image var(--time-hover) var(--time-function);
 }
 
 .checkbox-input:checked + .check-box {
